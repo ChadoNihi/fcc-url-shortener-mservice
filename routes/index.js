@@ -2,7 +2,7 @@ const mongo = require("mongodb").MongoClient,
       shortid = require('shortid'),
       collName = 'urls',
       urlDB = process.env.MONGOLAB_URI,
-      urlRE = new RegExp("^(https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,})$"), //thanks http://stackoverflow.com/a/17773849/4579279
+      urlRE = new RegExp("^(https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,})"), //thanks http://stackoverflow.com/a/17773849/4579279
       shortUrlRE = new RegExp('.+'); //WARNING: accepts any non-empty string
       
 exports.index = (req, res)=> {

@@ -1,0 +1,13 @@
+body {
+  background: #f9cb80;
+}
+a {
+  color: #000 !important;
+}
+.example {
+  border-left: 0.4em solid #808080;
+  padding: 1em;
+}
+.resp {
+  color: #666;
+}

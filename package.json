@@ -2,13 +2,18 @@
   "name": "url-shortener-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "eFish",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "mongodb": "^2.2.10",
+    "nib": "^1.1.2",
+    "pug": "^2.0.0-beta6",
+    "shortid": "^2.2.6",
+    "stylus": "^0.54.5"
   }
 }

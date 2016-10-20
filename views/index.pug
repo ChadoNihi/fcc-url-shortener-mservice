@@ -1,0 +1,32 @@
+html  
+    head
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="/stylesheets/main.css" rel="stylesheet")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-amber.min.css")
+        script(defer src="https://code.getmdl.io/1.2.1/material.min.js")
+    body
+        .mdl-layout__container
+            .mdl-layout.mdl-js-layout
+                main.mdl-layout__content
+                    .mdl-grid
+                        .mdl-cell.mdl-cell--12-col
+                            h1 URL Shortener
+                            h3 Instructions
+                        .mdl-cell.mdl-cell--12-col
+                            h5 Welcome to the URL Shortener App!
+                            p To shorten a specified URL do like this:
+                            - var urlToShort = 'http://reducing-suffering.org/';
+                            .example: a(href=fullUrl+'new/'+urlToShort) #{fullUrl+'new/'}<b>#{urlToShort}</b>
+                            p ...to get a response like this:
+                            - var shortened = 9999;
+                            .example.resp(style='white-space:pre;')
+                                |{
+                                | "originalUrl": #{urlToShort},
+                                | "result": #{fullUrl+shortened}
+                                |}
+                            p Then use it like:
+                            .example: a(href=fullUrl+shortened) #{fullUrl}<b>#{shortened}</b>
+                            p ...which will redirect you to the requested <a href=#{urlToShort}>#{urlToShort}</a>.
+            

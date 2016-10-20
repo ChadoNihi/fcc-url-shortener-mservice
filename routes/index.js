@@ -47,7 +47,6 @@ exports.userUrl = (req, res)=> {
 };
 
 exports.shortCode = (req, res)=> {
-    console.log(req.params.short);
     if (shortUrlRE.test(req.params.short)) {
         mongo.connect(urlDB, (err, db)=>{
             if (err) {
